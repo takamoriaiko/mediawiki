@@ -26,10 +26,13 @@ $wgSitename = "TakamoriAiko";
 ## (like /w/index.php/Page_title to /wiki/Page_title) please see:
 ## https://www.mediawiki.org/wiki/Manual:Short_URL
 $wgScriptPath = "";
+$wgArticlePath = "/wiki/$1";
+$wgUsePathInfo = true;
 $wgScriptExtension = ".php";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "https://wiki.takamoriaiko.com";
+$wgServer = getenv('HOSTNAME');
+if (!$wgServer) $wgServer = "http://".$_SERVER['HTTP_HOST'];
 
 ## The relative URL path to the skins directory
 $wgStylePath = "$wgScriptPath/skins";
