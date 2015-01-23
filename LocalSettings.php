@@ -29,7 +29,7 @@ $wgScriptPath = "";
 $wgScriptExtension = ".php";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "https://takamoriaiko-wiki.herokuapp.com";
+$wgServer = "https://wiki.takamoriaiko.com";
 
 ## The relative URL path to the skins directory
 $wgStylePath = "$wgScriptPath/skins";
@@ -43,8 +43,8 @@ $wgLogo = "$wgStylePath/common/images/wiki.png";
 $wgEnableEmail = false;
 $wgEnableUserEmail = true; # UPO
 
-$wgEmergencyContact = "apache@takamoriaiko-wiki.herokuapp.com";
-$wgPasswordSender = "apache@takamoriaiko-wiki.herokuapp.com";
+$wgEmergencyContact = "root@takamoriaiko.com";
+$wgPasswordSender = "root@takamoriaiko.com";
 
 $wgEnotifUserTalk = false; # UPO
 $wgEnotifWatchlist = false; # UPO
