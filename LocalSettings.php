@@ -127,3 +127,5 @@ $wgGroupPermissions['*']['edit'] = false;
 # End of automatically generated settings.
 # Add more configuration options below.
 
+require_once "$IP/extensions/MobileFrontend/MobileFrontend.php";
+$wgMFAutodetectMobileView = true;
