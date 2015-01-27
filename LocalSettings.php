@@ -129,3 +129,6 @@ $wgGroupPermissions['*']['edit'] = false;
 
 require_once "$IP/extensions/MobileFrontend/MobileFrontend.php";
 $wgMFAutodetectMobileView = true;
+
+# http://www.mediawiki.org/wiki/Manual:$wgAllowExternalImages
+$wgAllowExternalImages = true;
